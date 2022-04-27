@@ -12,7 +12,7 @@ st.set_page_config(
 
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
-    st.markdown("Do Visit @: ")
+    st.markdown("Follow @ ")
 with col2:
     st.markdown("[Linkedin](https://www.linkedin.com/in/santy707)")
 with col3:
@@ -21,6 +21,17 @@ with col4:
     st.markdown("[Github](https://github.com/withusanty)")
 with col5:
     st.markdown("[Tableau](https://public.tableau.com/app/profile/santosh.kumar3246)")
+
+col1, col2, col3, col4= st.columns(4)
+with col1:
+    st.markdown("Checkout Other Projects:  ")
+with col2:
+    st.markdown("[Stock Price Analysis](https://stock-analysis-santosh.herokuapp.com/)")
+with col3:
+    st.markdown("[WhatsApp Chat Analysis](https://whatsapp-santosh.herokuapp.com/)")
+with col4:
+    st.markdown("[Movie Recommender](https://santy-movierecommend.herokuapp.com/)")
+
 
 col1,col2,col3 = st.columns([1.5,3,1])
 with col2:
@@ -42,13 +53,13 @@ Transmission_Manual = 0
 
 col1,col2 = st.columns(2)
 with col1:
-     price = st.text_input('What is Present Price of the Car?', placeholder='Enter the  price...',max_chars=7)
+     price = st.text_input('Present Price of the Car?', placeholder='Enter the  price...',max_chars=7)
 
 with col2:
-     drivenkms = st.text_input('How much KMs car has been driven?', placeholder='Enter the  KMs driven...',max_chars=6)
+     drivenkms = st.text_input('How much car has been driven in KMs?', placeholder='Enter the  KMs driven...',max_chars=6)
 
 years = st.select_slider(
-          'In Which Car Build year?',
+          'Car Built Year?',
           options=year)
 
 col1, col2 = st.columns(2)
